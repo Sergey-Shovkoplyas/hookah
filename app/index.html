@@ -22,6 +22,7 @@
 
 	<!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -246,8 +247,8 @@
 							в закрытом чате
 						</h3>
 						<p class="chat__text">
-								также возможен приезд опытной команды запуска
-								в ваш город – проведем успешное открытие бизнеса вместе!
+							также возможен приезд опытной команды запуска
+							в ваш город – проведем успешное открытие бизнеса вместе!
 						</p>
 						<button class="btn chat__btn" type="button">Узнать подробности</button>
 					</div>
@@ -264,7 +265,7 @@
 				<div class="numbers__col">
 
 					<div class="numbers__value">
-						от  <span class="numbers__value-mark">1 млн.</span> руб.
+						от <span class="numbers__value-mark">1 млн.</span> руб.
 					</div>
 					<div class="numbers__text">Инвестиции в открытие</div>
 
@@ -280,7 +281,7 @@
 				<div class="numbers__col">
 
 					<div class="numbers__value">
-						от  <span class="numbers__value-mark">5 000</span> руб.
+						от <span class="numbers__value-mark">5 000</span> руб.
 					</div>
 					<div class="numbers__text">Роялти</div>
 
@@ -307,7 +308,7 @@
 	<div class="agreement">
 		<div class="container">
 			<h3 class="agreement__title">
-				вы получаете право на использование нашего бренда и полноценный франчайзинговый договор 
+				вы получаете право на использование нашего бренда и полноценный франчайзинговый договор
 			</h3>
 			<p class="agreement__text">Ваши вложения во франшизу надежно юридически защищены</p>
 			<button class="btn agreement__btn" type="button">Запросить договор</button>
@@ -322,19 +323,19 @@
 
 					<div class="moment__icon moment__icon--1"></div>
 					<div class="moment__text">Мы знаем о своём бизнесе практически всё и весь свой опыт передадим тебе</div>
-					
+
 				</div>
 				<div class="moment__col">
 
 					<div class="moment__icon moment__icon--2"></div>
 					<div class="moment__text">Доведем за руку до результата</div>
-					
+
 				</div>
 				<div class="moment__col">
 
 					<div class="moment__icon moment__icon--3"></div>
 					<div class="moment__text">Начать можно даже если нет опыта</div>
-					
+
 				</div>
 			</div>
 		</div>
@@ -342,10 +343,31 @@
 
 	<section class="photo">
 		<div class="container">
-			<h3 class="photo__title"> так может выглядеть твоя 
+			<h3 class="photo__title"> так может выглядеть твоя
 				собственная кальянная</h3>
 		</div>
-		<div class="photo__slider-wrap"></div>
+		<div class="photo__slider-wrap">
+			<!-- Slider main container -->
+			<div class="swiper-container">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<img class="photo__slider-item" src="img/photo__slide-3.jpg" alt="photo">
+					</div>
+					<div class="swiper-slide swiper-slide-active">
+						<img class="photo__slider-item" src="img/photo__slide-1.jpg" alt="photo">
+					</div>
+					<div class="swiper-slide">
+						<img class="photo__slider-item" src="img/photo__slide-2.jpg" alt="photo">
+					</div>
+				</div>
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+
+			</div>
+		</div>
 	</section>
 
 	<section class="feedback">
@@ -360,14 +382,11 @@
 	</section>
 
 	<footer class="footer">
-		Copyright © 2020. All Rights Reserved. 
+		Copyright © 2020. All Rights Reserved.
 	</footer>
 
-
-
-
-
-	<!-- <script src="js/jquery-3.4.1.min.js"></script> -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/swiper.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
 

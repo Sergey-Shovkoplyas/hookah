@@ -1,0 +1,67 @@
+.header 
+  padding-top: 140px
+  padding-bottom: 120px
+  background: url('../../img/header-bg-gamepad.png') no-repeat top 470px left 0, url('../../img/header-bg-hookah.png') no-repeat top 130px right 0, url('../img/header-bg.jpg') no-repeat center 
+  background-size: auto, auto, cover
+  &::before 
+    display: none
+    content: 'DEMO'
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    font-size: 298px
+    width: 700
+    color: rgba(255, 255, 255, .15)
+
+
+.header__title
+  margin: 0 130px
+  margin-bottom: 35px
+  text-align: center
+  font-size: 37px
+  line-height:  1.35
+  font-weight: 400
+  text-transform: uppercase
+  strong 
+    font-weight: 800
+
+.header__logo
+  margin: 0 auto
+  margin-bottom: 40px
+  text-align: center
+  font-family: 'FuturaPT', 'Gotham Pro', 'Arial', sans-serif
+  font-size: 231px
+  line-height: 1 
+  letter-spacing: -22px
+  &-green 
+    color: $color-green
+  &-orange 
+    color: $color-orange
+  &-blue 
+    margin-left: -20px
+    color: $color-blue
+  &-pink 
+    display: inline-block
+    height: 168px
+    width: 147px
+    margin-bottom: -10px
+    margin-left: 15px
+
+.header__profit 
+  display: block
+  width: 495px
+  margin: 0 auto
+  padding: 30px 75px 
+  text-align: center
+  background-color: rgba(44, 44, 44, .8)
+  
+.header__profit-text
+  font-size: 20px
+
+.header__profit-sum
+  font-size: 49px
+  font-weight: 800
+  color: $color-green
+  text-shadow: 0 0 25px rgba(20, 203, 51, .58)
+  

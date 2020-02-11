@@ -1,0 +1,106 @@
+.advantage 
+  position: relative
+  padding-top: 110px
+  padding-bottom: 107px
+  background-color: #000
+  &::before  
+    content: ''
+    position: absolute
+    top: 0
+    left: -124px
+    width: 248px
+    height: 322px
+    border: 1px solid $color-blue
+
+.advantage__title 
+  margin: 0
+  margin-bottom: 95px
+  text-align: center
+  text-transform: uppercase
+
+.advantage__row 
+  display: flex
+  justify-content: space-between
+
+.advantage__col 
+  width: 17%
+  
+
+.advantage__icon
+  position: relative
+  height: 210px
+  margin-bottom: 32px
+  background: #2c2c2c
+  &::after 
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 144px
+    height: 102px
+    background-image: url('../img/advantage__sprite.png')
+  &--1
+    &::after 
+      width: 94px
+      height: 102px
+      background-position: -150px -20px
+  &--2
+    &::after 
+      width: 114px
+      height: 70px
+      background-position: -558px -20px
+  &--3
+    &::after 
+      width: 96px
+      height: 96px
+      background-position: -284px -20px
+  &--4
+    &::after 
+      width: 98px
+      height: 98px
+      background-position: -420px -20px
+  &--5
+    &::after 
+      width: 90px
+      height: 88px
+      background-position: -20px -20px
+
+  &::before   
+    content: ''
+    position: absolute
+    top: -24px
+    left: 50%
+    transform: translateX(-50%)
+    width: 47px
+    height: 47px
+    text-align: center
+    font-size: 25px
+    line-height: 47px
+    font-weight: 700
+    border-radius: 50%
+    background-color: $color-orange
+  &--1 
+    &::before   
+      content: '1'
+  &--2 
+    &::before   
+      content: '2'
+  &--3 
+    &::before   
+      content: '3'
+  &--4 
+    &::before   
+      content: '4'
+  &--5 
+    &::before   
+      content: '5'
+
+.advantage__text
+  font-size: 20px
+  line-height: 28px
+  font-weight: 500
+  &--small 
+    font-size: 18px
+  &--smaller 
+    font-size: 16px

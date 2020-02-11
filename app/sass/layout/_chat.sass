@@ -1,0 +1,48 @@
+.chat
+  position: relative
+  padding-top: 132px
+  padding-bottom: 95px
+  background: #000 url('../img/chat-bg.png') no-repeat left top 250px
+  &::before  
+    content: ''
+    position: absolute
+    top: 0
+    right: -55px
+    width: 110px
+    height: 280px
+    border: 1px solid $color-orange
+  &::after  
+    content: ''
+    position: absolute
+    bottom: 57px
+    right: 0
+    width: 165px
+    height: 57px
+    background-color: $color-green
+
+.chat__row
+  display: flex
+  justify-content: space-between
+
+.chat__left
+  padding-left: 180px
+
+.chat__right
+  width: 43%
+
+.chat__left-img 
+  width: 335px
+
+h3.chat__title 
+  margin: 0
+  padding-top: 141px
+  padding-right: 110px
+  padding-bottom: 45px
+
+  line-height: 1.25
+
+.chat__text
+  margin: 0
+  padding-bottom: 25px
+  padding-right: 30px
+

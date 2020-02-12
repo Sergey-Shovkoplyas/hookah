@@ -23,7 +23,7 @@ $(document).ready(function () {
 		boxClass:     'wow',      // default
 		animateClass: 'animated', // default
 		offset:       0,          // default
-		mobile:       true,       // default
+		mobile:       false,       // default
 		live:         true        // default
 	}
 	)

@@ -11,20 +11,33 @@
     width: 248px
     height: 322px
     border: 1px solid $color-blue
+  +media-md 
+    padding-top: 70px
+    padding-bottom: 40px
+  +media-sm
+    padding-top: 50px
+    padding-bottom: 10px
 
 .advantage__title 
   margin: 0
   margin-bottom: 95px
   text-align: center
   text-transform: uppercase
+  +media-md 
+    margin-bottom: 60px
 
 .advantage__row 
   display: flex
   justify-content: space-between
+  +media-md 
+    flex-wrap: wrap
 
 .advantage__col 
   width: 17%
-  
+  +media-md 
+    width: 47%
+  +media-sm
+    width: 100%
 
 .advantage__icon
   position: relative
@@ -95,6 +108,10 @@
   &--5 
     &::before   
       content: '5'
+  +media-lg 
+    height: 170px
+  +media-md 
+    margin-bottom: 10px
 
 .advantage__text
   font-size: 20px
@@ -104,3 +121,7 @@
     font-size: 18px
   &--smaller 
     font-size: 16px
+  +media-md 
+    margin-bottom: 25px
+  +media-md 
+    margin-bottom: 35px

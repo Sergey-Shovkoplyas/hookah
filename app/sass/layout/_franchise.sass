@@ -19,28 +19,69 @@
     width: 43px
     height: 213px
     background-color: $color-orange
+  +media-lg 
+    &::after 
+      right: 15px
+  +media-md 
+    padding-top: 60px
+    padding-bottom: 80px
+  +media-sm 
+    padding-top: 40px
+    padding-bottom: 60px
+    &::before 
+      bottom: -20px
+    &::after
+      top: 140px
 
 .franchise__title
   margin: 0
   margin-bottom: 75px
   text-align: center
   text-transform: uppercase
+  +media-md 
+    margin-bottom: 40px
+  +media-sm 
+    margin-bottom: 30px
 
 .franchise__row 
   display: flex
   justify-content: space-between
   align-items: center
+  +media-md 
+    flex-wrap: wrap
 
 .franchise__right
-  flex: 0 1 55%
+  width: 55%
+  +media-md 
+    width: 100%
+    order: -1
+
 
 .franchise__left 
   padding-left: 65px
+  +media-lg 
+    padding-left: 0px
+  +media-md
+    width: 100%
+
+.franchise__logo
+  +media-md
+    display: block
+    width: 351px
+    margin: 0 auto
+  +media-sm 
+    position: relative
+    z-index: 10
+    width: 100%
 
 .franchise__list 
+  position: relative
+  z-index: 10
   padding: 0 
   margin: 0
   list-style: none
+  +media-md 
+    margin-bottom: 30px
 
 .franchise__item
   position: relative
@@ -84,4 +125,9 @@
       color: $color-orange
     &.franchise__item-pink
       color: $color-pink
+  +media-sm 
+    font-size: 18px
+    padding: 15px 20px 
+    span 
+      font-size: 20px
   

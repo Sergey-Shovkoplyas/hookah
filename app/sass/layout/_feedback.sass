@@ -1,14 +1,27 @@
 .feedback
   padding-top: 230px
   padding-bottom: 200px
-  background: red url('../img/feedback-bg.jpg') no-repeat center
+  background: #000 url('../img/feedback-bg.jpg') no-repeat center
   background-size: cover
+  +media-md 
+    padding-top: 150px
+    padding-bottom: 150px
+  +media-sm 
+    padding-top: 110px
+    padding-bottom: 110px
 
 h3.feedback__title 
   margin: 0 100px
   margin-bottom: 44px
   text-align: center
   font-size: 35px
+  +media-md 
+    font-size: 33px
+    margin: 0 
+    margin-bottom: 30px
+  +media-sm 
+    font-size: 25px 
+
 
 .feedback__btn-wrap
   text-align: center

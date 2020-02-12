@@ -1,6 +1,6 @@
 .agreement
   position: relative
-  padding-top: 233px
+  padding-top: 215px
   padding-bottom: 170px
   background: #000 url('../img/agreement-bg.png') no-repeat right top 130px
   &::after  
@@ -11,6 +11,22 @@
     width: 53px
     height: 280px
     background-color: $color-green
+  @media (max-width: 1540px)
+    background-position: right -200px top 130px
+  +media-lg 
+    background-position: right -270px top 130px   
+  +media-md
+    padding-top: 70px 
+    padding-bottom: 260px
+    background-position: right -270px top 220px 
+  +media-sm
+    padding-top: 40px
+    padding-bottom: 195px
+    background-position: center bottom
+    background-size: 320px 
+    &::after 
+      display: none
+
 
 h3.agreement__title
   position: relative
@@ -26,13 +42,27 @@ h3.agreement__title
     width: 140px
     height: 1px
     background-color: $color-orange
-
+  +media-md
+    padding-right: 0
+  +media-sm
+    font-size: 22px
+   
 .agreement__text
   margin: 0
   padding-bottom: 29px
   font-size: 20px
   font-weight: 500
+  +media-md 
+    padding-right: 150px
+  +media-sm 
+    padding-right: 0px
+    font-size: 18px
+
 
 .agreement__btn.btn 
   padding: 13px 41px
+
+.agreement__btn-wrap 
+  +media-sm   
+    text-align: center
 

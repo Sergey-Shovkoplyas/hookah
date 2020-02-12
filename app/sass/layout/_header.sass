@@ -13,6 +13,12 @@
     font-size: 298px
     width: 700
     color: rgba(255, 255, 255, .15)
+  +media-md
+    padding-top: 100px
+    padding-bottom: 80px
+  +media-sm
+    padding-top: 60px
+    padding-bottom: 40px
 
 
 .header__title
@@ -25,6 +31,12 @@
   text-transform: uppercase
   strong 
     font-weight: 800
+  +media-md   
+    margin: 0 60px
+    font-size: 32px
+  +media-sm 
+    margin: 0
+    font-size: 22px
 
 .header__logo
   margin: 0 auto
@@ -47,6 +59,18 @@
     width: 147px
     margin-bottom: -10px
     margin-left: 15px
+  +media-md   
+    font-size: 226px
+  +media-sm
+    font-size: 90px
+    letter-spacing: -10px
+    &-blue 
+      margin-left: -5px
+    &-pink 
+      height: 72px
+      width: auto 
+      margin-bottom: -5px
+      margin-left: 6px
 
 .header__profit 
   display: block
@@ -55,6 +79,12 @@
   padding: 30px 75px 
   text-align: center
   background-color: rgba(44, 44, 44, .8)
+  +media-md
+    width: 435px
+    padding: 20px 60px 
+  +media-sm 
+    width: 100%
+    padding: 15px 30px
   
 .header__profit-text
   font-size: 20px
@@ -64,4 +94,8 @@
   font-weight: 800
   color: $color-green
   text-shadow: 0 0 25px rgba(20, 203, 51, .58)
+  +media-md
+    font-size: 45px
+  +media-sm
+    font-size: 31px
   

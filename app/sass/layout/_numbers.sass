@@ -10,20 +10,34 @@
     width: 296px
     height: 130px
     border: 1px solid $color-pink
+  +media-md 
+    padding-bottom: 60px
+  +media-sm
+    padding-bottom: 30px
 
 .numbers__title
   margin: 0
   padding-bottom: 62px
   text-align: center
+  +media-md 
+    padding-bottom: 30px
 
 .numbers__row
+  position: relative
+  z-index: 10
   display: flex
   justify-content: space-between
   margin: 0 -10px
+  +media-lg 
+    flex-wrap: wrap
 
 .numbers__col 
   width: 25%
   padding: 0 10px
+  +media-lg 
+    width: 50%
+  +media-sm
+    width: 100%
 
 .numbers__value
   min-height: 91px
@@ -36,6 +50,11 @@
   &--small 
     padding-top: 20px
     font-size: 17px
+  +media-lg 
+    margin-bottom: 13px
+  +media-sm
+    margin-bottom: 8px
+  
   
 
 .numbers__value-mark
@@ -43,10 +62,17 @@
   font-weight: 800
   color: $color-blue
   &--small 
-    
     font-size: 35px
+  +media-sm 
+    font-size: 30px
+    &--small 
+      font-size: 30px
 
 .numbers__text 
   text-align: center
   font-size: 18px
   font-weight: 500
+  +media-lg 
+    margin-bottom: 30px
+  +media-sm
+    margin-bottom: 20px

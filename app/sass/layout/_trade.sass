@@ -1,25 +1,45 @@
 .trade 
   padding-top: 106px
   background: #000 url('../img/trade-bg.png') no-repeat left top
+  +media-md 
+    padding-top: 60px 
+  +media-sm 
+    padding-top: 40px
 
 .trade__row 
   display: flex
   justify-content: space-between
+  +media-md 
+    flex-wrap: wrap
 
 .trade__left
   padding-left: 10px
+  +media-lg 
+    padding-left: 0
+    padding-right: 20px
+  +media-md 
+    display: none
+    width: 100%
 
 .trade__right
   width: 58%
+  +media-md 
+    width: 100%
+    order: -1
 
 .trade__item
   padding-left: 5px
   padding-top: 37px
+  +media-lg 
+    padding-top: 15px
   
 .trade__title
   margin: 0
   margin-bottom: 40px
   text-transform: uppercase
+  +media-md 
+    text-align: center
+    margin-bottom: 30px
 
 .trade__text
   font-size: 18px
@@ -27,7 +47,20 @@
     margin: 0
     margin-bottom: 24px
 
+.trade__btn-wrap
+  +media-md 
+    text-align: center
+
 .trade__img 
   margin-top: -55px
   padding-left: 110px
   text-align: center
+  +media-lg 
+    margin-top: 60px
+    padding-left: 0
+  +media-md
+    margin-top: 40px
+    margin-left: -20px
+    margin-right: -20px
+    img 
+      width: 100%

@@ -11,6 +11,12 @@
     width: 150px
     height: 57px
     background-color: $color-blue
+  +media-md 
+    padding-top: 40px 
+    padding-bottom: 40px
+  +media-sm 
+    padding-top: 30px 
+    padding-bottom: 30px
 
 h2.moment__title
   margin: 0
@@ -18,15 +24,23 @@ h2.moment__title
   text-align: center
   font-weight: 700
   text-transform: none
+  +media-md 
+    margin-bottom: 50px 
+  +media-sm
+    margin-bottom: 40px 
 
 .moment__row
   display: flex
   justify-content: space-between
   margin: 0 -10px
+  +media-sm
+    flex-wrap: wrap
 
 .moment__col
   width: 33.33%
   padding: 0 10px
+  +media-sm 
+    width: 100%
 
 .moment__icon
   position: relative
@@ -59,8 +73,12 @@ h2.moment__title
       width: 73px
       height: 83px
       background-position:  -20px -20px
+  +media-sm
+    margin-bottom: 15px 
 
 .moment__text
   line-height: 1.5
   text-align: center
+  +media-sm
+    margin-bottom: 23px
 

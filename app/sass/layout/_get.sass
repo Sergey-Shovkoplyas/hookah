@@ -2,6 +2,7 @@
   position: relative
   padding-bottom: 140px
   background-color: #000
+  overflow: hidden
   &::before  
     content: ''
     position: absolute
@@ -18,11 +19,19 @@
     width: 53px
     height: 280px
     background-color: $color-green
+  +media-md 
+    padding-bottom: 100px
+  +media-sm 
+    padding-bottom: 60px
 
 .get__title 
   margin: 0 
   margin-bottom: 63px
   text-align: center
+  +media-md 
+    margin-bottom: 40px
+  +media-sm
+    margin-bottom: 30px
 
 .get__row
   display: flex
@@ -33,9 +42,12 @@
 .get__col
   width: 33.33%
   padding: 10px 10px
+  +media-sm 
+    width: 100%
 
 .get__item
   position: relative
+  z-index: 10
   height: 100%
   padding: 33px 115px 44px 30px
   overflow: hidden
@@ -84,3 +96,5 @@
       width: 58px
       height: 115px
       background-position: -20px -20px
+  +media-md 
+    padding: 25px 25px 45px 25px

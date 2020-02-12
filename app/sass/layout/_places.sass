@@ -1,5 +1,6 @@
 .places 
   position: relative 
+  overflow: hidden
   background-color: #000
   &::before  
     content: ''
@@ -9,7 +10,7 @@
     width: 240px
     height: 310px
     border: 1px solid $color-blue
-  &::after  
+  &::before 
     content: ''
     position: absolute
     bottom: 287px
@@ -17,12 +18,40 @@
     width: 53px
     height: 280px
     background-color: $color-orange
-
+  +media-sm 
+    &::before,
+    &::before 
+      display: none 
+  
 .places__title
   margin: 0
-  margin-bottom: 70px
+  margin-bottom: 60px
   text-align: center
+  +media-md 
+    margin-bottom: 40px
+  +media-sm
+    margin-bottom: 30px
 
-.places__gallery
-  min-height: 1215px
-  background-color: red
+.places__row 
+  display: flex
+  flex-wrap: wrap 
+  margin: 0 -10px
+  position: relative
+  z-index: 10
+
+.places__col 
+  width: 33%
+  padding: 10px
+  .places__img
+    height: 100%
+  &--wide 
+    width: 67%
+    .places__img
+      height: auto
+  +media-sm
+    padding: 5px
+
+.places__img
+  display: block
+  width: 100%
+

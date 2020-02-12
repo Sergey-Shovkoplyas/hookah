@@ -1,7 +1,7 @@
 .city
   position: relative
   padding-bottom: 475px
-  background: #000 url('../img/city-bg.jpg') center bottom
+  background: #000 url('../img/city-bg.jpg') no-repeat center bottom
   &::after  
     content: ''
     position: absolute
@@ -10,11 +10,30 @@
     width: 126px
     height: 42px
     background-color: $color-orange
+  +media-md
+    padding-bottom: 415px
+    &::after
+      top: 60px
+  +media-sm   
+    padding-bottom: 330px
+    background-position: center bottom -80px
+    &::after
+      top: 255px
 
 .city__title
   margin: 0 200px
   margin-bottom: 42px
   text-align: center
+  +media-lg 
+    margin: 0 70px
+    margin-bottom: 30px
+  +media-md
+    margin: 0 30px
+    margin-bottom: 20px
+  +media-sm
+    margin: 0
+    margin-bottom: 15px
+  
 
 .trade__btn
   text-align: center

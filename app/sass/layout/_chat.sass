@@ -1,5 +1,6 @@
 .chat
   position: relative
+  overflow: hidden
   padding-top: 132px
   padding-bottom: 95px
   background: #000 url('../img/chat-bg.png') no-repeat left top 250px
@@ -19,30 +20,78 @@
     width: 165px
     height: 57px
     background-color: $color-green
+  +media-md 
+    padding-top: 70px
+    padding-bottom: 60px
+    background-position: left top 90px
+  +media-sm
+    padding-top: 50px
+    padding-bottom: 40px
+    background-position: left top
 
 .chat__row
   display: flex
   justify-content: space-between
+  +media-sm 
+    flex-wrap: wrap
 
 .chat__left
+  position: relative
+  z-index: 10
   padding-left: 180px
+  +media-lg 
+    padding-left: 0
+  +media-sm 
+    width: 100%
 
 .chat__right
+  position: relative
+  z-index: 10
   width: 43%
+  +media-lg 
+    width: 60%
+  +media-sm 
+    width: 100%
+    order: -1
 
 .chat__left-img 
   width: 335px
+  +media-md 
+    width: 240px
+  +media-sm
+    display: block
+    margin: 0 auto
 
 h3.chat__title 
+  position: relative
   margin: 0
   padding-top: 141px
   padding-right: 110px
   padding-bottom: 45px
-
   line-height: 1.25
+  &::after 
+    position: absolute
+    content: ''
+    bottom: 31px
+    left: 0
+    width: 118px
+    height: 1px
+    background-color: $color-pink
+  +media-md 
+    padding: 60px 0px 25px 0px
+  +media-sm 
+    padding-top: 0
+    padding-bottom: 20px
+    &::after 
+      bottom: 13px
+  
 
 .chat__text
   margin: 0
   padding-bottom: 25px
   padding-right: 30px
 
+.chat__btn-wrap
+  +media-sm 
+    margin-bottom: 20px
+    text-align: center

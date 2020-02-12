@@ -29,4 +29,13 @@ $(document).ready(function () {
 	)
 	wow.init();
 
+
+	let $popap = $('.popap'); 
+	$('.btn').not('.btn.popap__btn').on('click', function() {
+		$popap.toggleClass('active');
+	});
+	$('.popap__close').on('click', function() {
+		$popap.toggleClass('active');
+	});
+
 });

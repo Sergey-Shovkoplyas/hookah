@@ -1,9 +1,3 @@
-/* window.onload = function () {
-	
-	console.log('js is working!!!'); 
-
-} */
-
 $(document).ready(function () {
 
 	let mySwiper = new Swiper('.swiper-container', {
@@ -24,6 +18,15 @@ $(document).ready(function () {
 
 	mySwiper.slideTo(1, 0, false);
 
-	console.log('JQuery!!!');
+	wow = new WOW(
+		{
+		boxClass:     'wow',      // default
+		animateClass: 'animated', // default
+		offset:       0,          // default
+		mobile:       true,       // default
+		live:         true        // default
+	}
+	)
+	wow.init();
 
 });

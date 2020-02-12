@@ -1,21 +1,37 @@
 .photo 
-  padding-top: 100px
-  padding-bottom: 130px
+  padding-top: 103px
+  padding-bottom: 115px
   background-color: #000
+  +media-md
+    padding-top: 60px
+    padding-bottom: 70px
+  +media-sm 
+    padding-top: 30px
+    padding-bottom: 40px
+
 
 .photo__title 
   margin: 0 270px
   margin-bottom: 75px
   text-align: center
+  +media-lg 
+    margin: 0
+    margin-bottom: 75px
+  +media-md
+    margin-bottom: 40px
+  +media-sm 
+    margin-bottom: 30px
 
-.photo__slider-wrap
-  height: 565px
 
-.photo__slider-item 
-  display: block
+.photo__slider-img
+  // display: block
 
-.swiper-button__container
-  position: relative
 
 .swiper-slide 
   width: auto
+
+.photo__slider-img
+  +media-md 
+    height: 300px
+  +media-sm 
+    height: 200px

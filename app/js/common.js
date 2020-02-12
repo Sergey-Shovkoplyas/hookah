@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+	// Swiper slider itialize --------------------------------------
+
 	let mySwiper = new Swiper('.swiper-container', {
 		// initialSlide: 1,
 		slidesPerView: 'auto',
@@ -15,8 +17,9 @@ $(document).ready(function () {
 			}
 		}
 	})
-
 	mySwiper.slideTo(1, 0, false);
+
+	// Wow animation itialize --------------------------------------
 
 	wow = new WOW(
 		{
@@ -29,6 +32,7 @@ $(document).ready(function () {
 	)
 	wow.init();
 
+	// Popap toggle  --------------------------------------
 
 	let $popap = $('.popap'); 
 	$('.btn').not('.btn.popap__btn').on('click', function() {
@@ -36,6 +40,22 @@ $(document).ready(function () {
 	});
 	$('.popap__close').on('click', function() {
 		$popap.toggleClass('active');
+	});
+
+	// Sent form to email  --------------------------------------
+
+	$("#popap__form").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#form").trigger("reset");
+			$popap.removeClass('active');
+		});
+		return false;
 	});
 
 });

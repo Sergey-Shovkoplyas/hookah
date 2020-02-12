@@ -23,10 +23,6 @@
     margin-bottom: 30px
 
 
-.photo__slider-img
-  // display: block
-
-
 .swiper-slide 
   width: auto
 
@@ -35,3 +31,35 @@
     height: 300px
   +media-sm 
     height: 200px
+
+.swiper-button-wrap
+  position: absolute
+  z-index: 50
+  top: 0
+  left: 50%
+  transform: translateX(-50%)
+  height: 566px
+  width: 1280px
+  .swiper-button-prev,
+  .swiper-button-next
+    width: 60px
+    height: 60px
+    background-color: rgba(44, 44, 44, .8)
+    &:hover
+      &::after 
+        color: $color-green
+    &::after 
+      font-size: 25px
+      color: #fff
+      transition: .2s
+  +media-lg
+    width: 960px
+  +media-md
+    height: 300px
+    width: 720px
+  +media-sm
+    height: 200px
+    width: 430px
+  +media-xs
+    width: 375px
+  

@@ -41,10 +41,15 @@ $(document).ready(function () {
 	$('.popap__close').on('click', function() {
 		$popap.toggleClass('active');
 	});
+	$('.popap').on('click', function(e) {
+		if(e.target === this) {
+			$popap.removeClass('active');
+		}
+	});
 
 	// Sent form to email  --------------------------------------
 
-	$("#popap__form").submit(function() {
+	$("#popapForm").submit(function() {
 		$.ajax({
 			type: "POST",
 			url: "mail.php",
@@ -57,5 +62,9 @@ $(document).ready(function () {
 		});
 		return false;
 	});
+
+	// Mask for Phone input  --------------------------------------
+
+	$('#popapPhone').mask("+7(999)-999-9999");
 
 });

@@ -24,6 +24,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -233,12 +234,12 @@
 			<div class="chat__row">
 				<div class="chat__left">
 
-					<img src="img/chat__left-img.png" alt="chat" class="chat__left-img wow pulse" data-wow-iteration="infinite">
+					<img src="img/chat__left-img.png" alt="chat" class="chat__left-img wow bounceInLeft">
 
 				</div>
 				<div class="chat__right">
 
-					<div class="chat__item">
+					<div class="chat__item wow bounceInRight">
 						<h3 class="chat__title">
 							с вами всегда
 							на связи
@@ -305,22 +306,22 @@
 			
 			<div class="places__row">
 				<div class="places__col">
-					<img class="places__img" src="img/places__img-1.jpg" alt="place">
+					<a href="img/places__img-1.jpg" data-fancybox="images"><img class="places__img" src="img/places__img-1.jpg" alt="place"></a>
 				</div>
 				<div class="places__col places__col--wide">
-					<img class="places__img" src="img/places__img-2.jpg" alt="place">
+					<a href="img/places__img-2.jpg" data-fancybox="images"><img class="places__img" src="img/places__img-2.jpg" alt="place"></a>
 				</div>
 				<div class="places__col places__col--wide">
-					<img class="places__img" src="img/places__img-3.jpg" alt="place">
+					<a href="img/places__img-3.jpg" data-fancybox="images"><img class="places__img" src="img/places__img-3.jpg" alt="place"></a>
 				</div>
 				<div class="places__col">
-					<img class="places__img" src="img/places__img-4.jpg" alt="place">
+					<a href="img/places__img-4.jpg" data-fancybox="images"><img class="places__img" src="img/places__img-4.jpg" alt="place"></a>
 				</div>
 				<div class="places__col">
-					<img class="places__img" src="img/places__img-5.jpg" alt="place">
+					<a href="img/places__img-5.jpg" data-fancybox="images"><img class="places__img" src="img/places__img-5.jpg" alt="place"></a>
 				</div>
 				<div class="places__col places__col--wide">
-					<img class="places__img" src="img/places__img-6.jpg" alt="place">
+					<a href="img/places__img-6.jpg" data-fancybox="images"><img class="places__img" src="img/places__img-6.jpg" alt="place"></a>
 				</div>
 			</div>
 			
@@ -427,11 +428,11 @@
 	</footer>
 
 	<div class="popap">
-		<form id="popap__form" class="popap__form" method="post">
+		<form id="popapForm" class="popap__form" method="post">
 			<div class="popap__close"></div>
 			<div class="popap__title">Обратная связь</div>
 			<input class="popap__text" type="text" placeholder="Имя" required name="name">
-			<input class="popap__text" type="text" placeholder="Телефон" required name="phone">
+			<input id="popapPhone" class="popap__text" type="text" placeholder="Телефон" required name="phone">
 			<button class="btn popap__btn" type="submit" name="submit">Отправить</button>
 		</form>
 	</div>
@@ -439,6 +440,8 @@
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/swiper.min.js"></script>
 	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
  
